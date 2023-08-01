@@ -1,0 +1,105 @@
+{
+  "author": {
+    "name": "Théophane Duval"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "webpack",
+    "redux",
+    "tailwind",
+    "react-router",
+    "axios"
+  ],
+  "license": "MIT",
+  "name": "react-test-technique",
+  "version": "1.0.0",
+  "description": "Test technique Eldo",
+  "dependencies": {
+    "@babel/runtime": "^7.21.5",
+    "axios": "^0.23.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "dayjs": "^1.11.8",
+    "deep-object-diff": "^1.1.9",
+    "formik": "^2.4.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.11.0",
+    "react-router-dom": "^6.11.0",
+    "react-select": "^5.7.2",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.45.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack serve --config config/webpack.dev.js",
+    "build_staging": "APP_ENV=staging webpack --config config/webpack.stag.js",
+    "build_prod": "APP_ENV=production webpack --config config/webpack.prod.js"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@svgr/webpack": "^5.5.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.2.1",
+    "autoprefixer": "^10.4.2",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^2.0.0",
+    "cssnano": "^4.1.10",
+    "dotenv-webpack": "^6.0.4",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.1.0",
+    "html-inline-css-webpack-plugin": "^1.11.1",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss": "^8.4.7",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.3.2",
+    "react-refresh": "^0.9.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.72.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
